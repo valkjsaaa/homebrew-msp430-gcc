@@ -7,7 +7,7 @@ class Msp430Gdb < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}",
-                          "--target=msp430",
+                          "--target=msp430-elf",
                           "--program-prefix=msp430",
                           "--disable-nls",
                           "--disable-werror"

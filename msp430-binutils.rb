@@ -7,7 +7,7 @@ class Msp430Binutils < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}",
-                          "--target=msp430",
+                          "--target=msp430-elf",
                           "--disable-werror",
                           "--disable-nls"
     system "make"

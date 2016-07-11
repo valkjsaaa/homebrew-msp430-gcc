@@ -1,5 +1,5 @@
 class Msp430Gcc < Formula
-  desc "GNU compiler collection"
+  desc "GNU compiler collection for MSP430"
   homepage "https://gcc.gnu.org"
   url "https://ftpmirror.gnu.org/gcc/gcc-6.1.0/gcc-6.1.0.tar.bz2"
   mirror "https://ftp.gnu.org/gnu/gcc/gcc-6.1.0/gcc-6.1.0.tar.bz2"
@@ -13,7 +13,7 @@ class Msp430Gcc < Formula
   def install
     mkdir 'build' do
       system "../configure", "--prefix=#{prefix}",
-                             "--target=msp430",
+                             "--target=msp430-elf",
                              "--disable-werror",
                              "--disable-libssp",
                              "--disable-libmudflap",
