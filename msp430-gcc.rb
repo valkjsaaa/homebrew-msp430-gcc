@@ -19,8 +19,8 @@ class Msp430Gcc < Formula
                              "--disable-libmudflap",
                              "--disable-nls",
                              "--with-newlib",
-                             "--with-as=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-as",
-                             "--with-ld=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-ld",
+                             "--with-as=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-elf-as",
+                             "--with-ld=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-elf-ld",
                              "--without-headers",
                              "--enable-languages=c"
       system "make", "all-gcc"
