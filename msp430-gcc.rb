@@ -21,7 +21,6 @@ class Msp430Gcc < Formula
                              "--with-newlib",
                              "--with-as=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-elf-as",
                              "--with-ld=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-elf-ld",
-                             "--without-headers",
                              "--enable-languages=c,c++"
       system "make", "all-gcc"
       system "make", "install-gcc"
