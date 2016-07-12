@@ -14,10 +14,6 @@ class Msp430Gcc < Formula
     mkdir 'build' do
       system "../configure", "--prefix=#{prefix}",
                              "--target=msp430-elf",
-                             "--disable-werror",
-                             "--disable-libssp",
-                             "--disable-libmudflap",
-                             "--disable-nls",
                              "--with-newlib",
                              "--with-as=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-elf-as",
                              "--with-ld=#{Formula["msp430-binutils"].opt_prefix}/bin/msp430-elf-ld",
